@@ -47,7 +47,6 @@ class Countdown extends React.Component {
       <div>
         <Clock totalSeconds={count}/>
         <CountdownForm onSetCountdown={this.handleSetCountdown}/>
-        <Controls/>
       </div>
     );
   }
