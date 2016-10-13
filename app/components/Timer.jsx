@@ -9,7 +9,6 @@ class Timer extends React.Component {
     return (
       <div>
         <Clock totalSeconds={456}/>
-        <Controls/>
       </div>
     );
   }
