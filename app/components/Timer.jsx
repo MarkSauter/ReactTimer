@@ -1,5 +1,6 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
+var Clock = require('Clock');
 var Controls = require('Controls');
 
 class Timer extends React.Component {
@@ -7,7 +8,7 @@ class Timer extends React.Component {
   render () {
     return (
       <div>
-        <p>Timer.jsx</p>
+        <Clock totalSeconds={456}/>
         <Controls/>
       </div>
     );
