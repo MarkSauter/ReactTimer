@@ -3,12 +3,14 @@ var PropTypes = React.PropTypes;
 var CountdownForm = require('CountdownForm');
 var Controls = require('Controls');
 
+var Clock = require('Clock');
+
 class Countdown extends React.Component {
 
   render () {
     return (
-      <div className='text-center'>
-        <p>Countdown.jsx</p>
+      <div>
+        <Clock totalSeconds={129}/>
         <CountdownForm/>
         <Controls/>
       </div>

@@ -6,7 +6,7 @@ class Timer extends React.Component {
 
   render () {
     return (
-      <div className='text-center'>
+      <div>
         <p>Timer.jsx</p>
         <Controls/>
       </div>
