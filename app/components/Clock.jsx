@@ -6,7 +6,7 @@ class Clock = React.Component {
   render: function() {
     return (
       <div>
-        
+        <p>Clock.jsx</p>
       </div>
     );
   }
