@@ -6,9 +6,10 @@ var Controls = require('Controls');
 class Timer extends React.Component {
 
   render () {
+
     return (
       <div>
-        <Clock totalSeconds={456}/>
+        <Clock/>
       </div>
     );
   }
