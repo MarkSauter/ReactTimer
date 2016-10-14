@@ -9,11 +9,11 @@ class Controls extends React.Component {
     };
   }
   render () {
-    var {countdownStatus} = this.props;
+    var {status} = this.props;
     var renderStartStopButton = () => {
-      if (countdownStatus === 'started') {
+      if (status === 'started') {
         return (<button className="button secondary" onClick={this.onStatusChange('paused')}>Pause</button>);
-      } else if (countdownStatus === 'paused') {
+      } else {
         return (<button className="button primary" onClick={this.onStatusChange('started')}>Start</button>);
       }
     };
@@ -28,7 +28,7 @@ class Controls extends React.Component {
 
 }
 Controls.propTypes = {
-  countdownStatus: React.PropTypes.string.isRequired,
+  status: React.PropTypes.string.isRequired,
   onStatusChange: React.PropTypes.func.isRequired
 };
 
